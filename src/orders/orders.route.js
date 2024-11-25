@@ -28,7 +28,7 @@ router.post("/create-checkout-session", async (req, res) => {
       mode: "payment",
       success_url:
         "https://tu-merch-frontend.vercel.app/success?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "https://tu-merch-frontend.vercel.app/cancel",
+      cancel_url: "https://tu-merch-frontend.vercel.app/shop",
     });
 
     res.json({ id: session.id });
