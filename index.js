@@ -15,7 +15,9 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // routes
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({ origin: "https://tu-merch-frontend.vercel.app", credentials: true })
+);
 
 // image upload
 const uploadImage = require("./src/utils/uploadImage");
